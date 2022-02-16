@@ -63,4 +63,18 @@ document.getElementById("submit-btn").addEventListener("click", function () {
   pin.value = "";
   numberInput.value = "";
 });
-console.log(count);
+
+// submit action left
+let click = 0;
+function count(){
+  let submitText = document.getElementById('submit-action-left');
+  click++;
+  if(click == 1){
+    submitText.innerText = '2 try left';
+  } else if (click == 2){
+    submitText.innerText = '1 try left';
+  } else {
+    submitText.innerText = '0 try left';
+  }
+}
+
